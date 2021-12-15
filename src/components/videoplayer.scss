@@ -1,0 +1,19 @@
+@import "../styles/media-queries";
+
+.videoContainer{
+    width: 100%;
+    .video-js{
+        background: none;
+        width: 100%;
+        height: 46.4vw;
+        margin: 1rem 0 ;
+    }
+}
+
+@include respond-above(lg) {
+    .videoContainer{
+        .video-js{
+            height: 640px;
+        }
+    }
+}

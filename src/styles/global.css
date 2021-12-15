@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100;300;400;500;700;900&display=swap');
+*{
+    font-family: 'Noto Sans HK', sans-serif;
+}
+body{
+    background-image: url('../images/bg.jpg');
+    background-repeat: repeat;
+    font-family: 'Noto Sans HK', sans-serif;
+}
+p{
+    font-size: 14px;
+    padding:0;
+    margin:0;
+}
+.thumbnailContainer{
+    background-image: url('../images/articleThumbnailBox.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 0;
+    width: 100%;
+    padding: 0.9em;
+}
+
+.thumbnailContainer img{
+    width: 100%;
+}
+
+.titleContainer{
+    background-image: url('../images/articleTitleBox.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 0;
+    width: 100%;
+    min-height: 6em;
+    padding: 1em 2em;
+}
+.titleContainer p{
+    text-align: center;
+    font-weight: bold;
+}
+
+.transition-content{
+    position: fixed;
+    background: url('../images/transition.png') no-repeat 50% 50%;
+    background-size:  50%;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* transform: translateY(100%); */
+ }

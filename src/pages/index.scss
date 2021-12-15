@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@100;300;400;500;700;900&display=swap');
+@import "../styles/media-queries";
+
+
+button { 
+    border:none;  
+    padding:0;
+} 
+.row{
+    margin-right: -10px;
+    margin-left: -10px;
+}
+.thumbnailContainer{
+    background-image: url('../images/articleThumbnailBox.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 0;
+    width: 100%;
+    padding: 0.5em;
+    padding-bottom: 3em;
+}
+
+
+.imageContainer{
+    position:relative;
+    overflow:hidden;
+    padding-bottom:100%;
+    img{
+        position:absolute;
+    }
+}
+.titleContainer{
+    background-image: url('../images/articleTitleBox.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0 0;
+    width: 100%;
+    min-height: 6.5em;
+    padding: 1.3em 1em;
+    margin-bottom: 1.5em;
+}
+
+.titleContainer p{
+    text-align: center;
+    font-weight: bold;
+    line-height: 1.2em;
+    padding:0;
+    color: #007E8A ;
+    margin:0;
+    font-size: 1.5vw;
+    height: 2.5em;
+}
+
+.titleContainer a{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8vw;
+    line-height: 1.2em;
+    padding:0;
+    margin:0;
+    text-decoration: none;
+    color: #007E8A ;
+}
+
+
+ .transitionbg {
+    position: fixed;
+    background: #ccc url('../images/bg.jpg') repeat 0 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transform: translateY(100%);
+ }
+
+ .transition-content{
+    position: fixed;
+    background: url('../images/transition.png') no-repeat 50% 50%;
+    background-size:  50%;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    /* transform: translateY(100%); */
+ }
+
+
+@include respond-below(xs) {
+    .thumbnailContainer{  
+        padding-bottom: 1.6em;
+    }
+    .titleContainer{
+        padding: 0.7em 0.6em;
+        margin-bottom: 1em;
+        min-height: 4em;
+    }
+    .titleContainer p{
+        font-size: 3.5vw
+    }
+}
+@include respond-between(xs, sm) {
+    .thumbnailContainer{  
+        padding-bottom: 1.6em;
+    }
+    .titleContainer{
+        padding: 0.5em 0.7em;
+        margin-bottom: 1em;
+        min-height: 2.8em;
+    }
+    .titleContainer p{
+        font-size: 1.5vw
+    }
+}
+@include respond-between(sm, md) {
+    .thumbnailContainer{  
+        padding-bottom: 2.2em;
+    }
+    .titleContainer{
+        padding: 0.7em 1em;
+        margin-bottom: 1em;
+        min-height: 6em;
+    }
+    .titleContainer p{
+        font-size: 1.4vw
+    }
+}
+@include respond-between(md, lg) {
+    .thumbnailContainer{  
+        padding-bottom: 2.5em;
+    }
+    .titleContainer{
+        padding: 1.2em 1.2em;
+        margin-bottom: 1em;
+        min-height: 6em;
+    }
+    .titleContainer p{
+        font-size: 1.6vw
+    }
+}
+
+@include respond-above(lg) {
+    .titleContainer p{
+        font-size: 21px;
+    }
+}

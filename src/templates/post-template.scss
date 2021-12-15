@@ -1,0 +1,67 @@
+@import "../styles/media-queries";
+p{
+    font-size: 16px;
+}
+
+.btnBackContainer{
+    img{
+        width: 10vw; 
+    }
+}
+
+p{
+    line-height: 1.5em;
+}
+h3{
+    margin: 1em 0 0.5em 0; 
+}
+h4{
+    margin: 1em 0 0 0;
+}
+
+.contentContainer{
+    background-color: rgba(255,255,255,0.8);
+    padding: 1em;
+}
+
+@include respond-below(xs) {
+    .btnBackContainer{
+        img{
+            width: 25vw; 
+        }
+    }
+}
+
+@include respond-between(xs, sm) {
+    .btnBackContainer{
+        img{
+            width: 15vw; 
+        }
+    }
+}
+
+@include respond-between(sm, md) {
+    .btnBackContainer{
+        img{
+            width: 15vw; 
+        }
+    }
+}
+
+
+@include respond-between(md, lg) {
+    .btnBackContainer{
+        img{
+            width: 10vw; 
+        }
+    }
+}
+
+@include respond-above(lg) {
+    .btnBackContainer{
+        img{
+            width: 10vw; 
+        }
+    }
+}
+
